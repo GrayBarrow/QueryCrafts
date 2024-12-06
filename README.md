@@ -18,7 +18,7 @@ The database was made and ran using MySQL on MySQL Workbench. I have included th
 
 You could try to connect the existing .idb files, or you could run the two .sql files I have provided: create_schemas.sql for creating the schemas, and fake_data.sql for filling it with the same fake data I did. This will recreate exactly what exist in the querycrafts folder. 
 
-For connecting to the database, an environment variable filled with these variables is necessary:
+For connecting to the database, an environment variable filled with these variables is necessary at line 692:
 ```bash
 connection = mysql.connector.connect(
     host=os.getenv("DB_HOST"),
@@ -27,7 +27,7 @@ connection = mysql.connector.connect(
     database=os.getenv("DB_NAME")
 )
 ```
-
+You will need a host (probably localhost), a username and password, and then a name for database, which can be anything if you make it youself and then populate it with my .sql files. 
 
 ## Using and Instructions
 
@@ -35,4 +35,4 @@ The program is a CLI. Almost all interactions are by typing a number to select a
 
 ## Test Queries
 
-The test queries are in this repo as a single sql file. As stated, I used MySQL to run everything, which means I ran everything on MySQL Workbench, if you would like to do the same. 
+The test queries are in this repo as a single .sql file. As stated, I used MySQL to run everything, which means I ran everything on MySQL Workbench, if you would like to do the same. 

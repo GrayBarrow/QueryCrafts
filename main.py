@@ -690,10 +690,10 @@ if __name__ == "__main__":
         console = Console()
 
         connection = mysql.connector.connect(
-            host="localhost",       # Replace with your DB host
-            user="GrayBarrow",    # Replace with your DB username
-            password="5YnN42bVmsqldb@", # Replace with your DB password
-            database="querycrafts" # Replace with your database name
+            host=os.getenv("DB_HOST"),
+            user=os.getenv("DB_USER"),
+            password=os.getenv("DB_PASSWORD"),
+            database=os.getenv("DB_NAME")
         )
 
         # get user_id

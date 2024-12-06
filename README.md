@@ -1,6 +1,6 @@
 # QueryCrafts Marketplace
 
-QueryCrafts Marketplace is a digital marketplace for crafts people to buy and sell their creations through digital storefronts. 
+QueryCrafts Marketplace is a proof of concept for a digital marketplace for crafts people to buy and sell their creations through digital storefronts. 
 
 ## Installing and Running
 
@@ -19,7 +19,7 @@ I did everything in a coda evironment running python 3.13, though I'm sure older
 
 The database was made and ran using MySQL on MySQL Workbench. I have included the actaul .ibd files in a folder called querycrafts. You could try to connect the existing .idb files, or you could run the two .sql files I have provided: create_schemas.sql for creating the database and schemas, and fake_data.sql for filling it with the same fake data I did. This will recreate exactly what exist in the querycrafts folder. 
 
-For connecting to the database, an environment variable file filled with these variables is necessary at line 692:
+For connecting to the database, an environment variable file filled with these variables is necessary at line 701:
 ```bash
 connection = mysql.connector.connect(
     host=os.getenv("DB_HOST"),

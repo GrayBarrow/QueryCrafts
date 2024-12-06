@@ -16,7 +16,7 @@ pip install mysql-connector-python
 
 The database was made and ran using MySQL on MySQL Workbench. I have included the actaul -ibd files in a folder called querycrafts.
 
-You could try to connect the existing .idb files, or you could run the two .sql files I have provided: create_tables.sql for creating the schemas, and fake_data.sql for filling it with the same fake data I did. This will recreate exactly what exist in the querycrafts folder. 
+You could try to connect the existing .idb files, or you could run the two .sql files I have provided: create_schemas.sql for creating the schemas, and fake_data.sql for filling it with the same fake data I did. This will recreate exactly what exist in the querycrafts folder. 
 
 For connecting to the database, an environment variable filled with these variables is necessary:
 ```bash

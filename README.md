@@ -13,7 +13,7 @@ pip install rich
 pip install mysql-connector-python
 ```
 ```bash
-pip install  python-dotenv
+pip install python-dotenv
 ```
 I did everything in a coda evironment running python 3.13, though I'm sure older version will run fine.
 

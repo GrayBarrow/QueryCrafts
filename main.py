@@ -2,6 +2,8 @@ import mysql.connector
 from rich.console import Console
 from rich.table import Table
 import hashlib
+import os
+from dotenv import load_dotenv
 
 def run_query(query, params=None):
     """
@@ -689,11 +691,18 @@ if __name__ == "__main__":
     try:
         console = Console()
 
+        load_dotenv()
+
+        DB_HOST = os.getenv("DB_HOST")
+        DB_USER = os.getenv("DB_USER")
+        DB_PASSWORD = os.getenv("DB_PASSWORD")
+        DB_NAME = os.getenv("DB_NAME")
+
         connection = mysql.connector.connect(
-            host=os.getenv("DB_HOST"),
-            user=os.getenv("DB_USER"),
-            password=os.getenv("DB_PASSWORD"),
-            database=os.getenv("DB_NAME")
+            host=DB_HOST,
+            user=DB_USER,
+            password=DB_PASSWORD,
+            database=DB_NAME
         )
 
         # get user_id

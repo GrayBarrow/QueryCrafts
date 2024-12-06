@@ -4,14 +4,16 @@ QueryCrafts Marketplace is a digital marketplace for crafts people to buy and se
 
 ## Installing and Running
 
-The program is a single python script main.py which requires the packages rich and mysql-connector-python, both installable using pip as so:
+The program is a single python script main.py which requires the packages rich, mysql-connector-python, and  python-dotenv, all installable using pip as so:
 
 ```bash
 pip install rich
 ```
-
 ```bash
 pip install mysql-connector-python
+```
+```bash
+pip install  python-dotenv
 ```
 I did everything in a coda evironment running python 3.13, though I'm sure older version will run fine.
 
